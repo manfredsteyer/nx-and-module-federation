@@ -4,7 +4,7 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'nx-mf-demo-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  // styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
 
