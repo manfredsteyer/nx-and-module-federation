@@ -1,0 +1,19 @@
+<ng-container *ngIf="!loggedInUserName">
+    <h1>Welcome!</h1>
+    <form>
+        <label>
+            UserName:
+            <input [(ngModel)]="userName" name="userName">
+        </label>
+        <label class="password">
+            Password:
+            <input [(ngModel)]="password" name="password" type="password">
+        </label>
+
+        <button (click)="login()">Login</button>
+    </form>
+</ng-container>
+
+<ng-container *ngIf="loggedInUserName">
+    <h1>Welcome, {{loggedInUserName}}!</h1>
+</ng-container>

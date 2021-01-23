@@ -18,7 +18,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -28,7 +33,27 @@
     },
     "shell-e2e": {
       "tags": [],
-      "implicitDependencies": ["shell"]
+      "implicitDependencies": [
+        "shell"
+      ]
+    },
+    "mfe1": {
+      "tags": []
+    },
+    "mfe1-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "mfe1"
+      ]
+    },
+    "mfe1-mfe1-feature-book": {
+      "tags": []
+    },
+    "mfe1-mfe1-feature-search": {
+      "tags": []
+    },
+    "shared-auth-lib": {
+      "tags": []
     }
   }
 }

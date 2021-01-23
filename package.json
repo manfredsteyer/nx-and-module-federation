@@ -2,6 +2,9 @@
   "name": "nx-mf-demo",
   "version": "0.0.0",
   "license": "MIT",
+  "resolutions": {
+    "webpack": "^5.0.0"
+  },
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
@@ -29,6 +32,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-architects/module-federation": "1.2.3",
     "@angular/animations": "^11.0.0",
     "@angular/common": "^11.0.0",
     "@angular/compiler": "^11.0.0",
