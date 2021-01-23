@@ -35,5 +35,3 @@ module.exports = {
     sharedMappings.getPlugin(),
   ],
 };
-
-console.log('desc', sharedMappings.getDescriptors());

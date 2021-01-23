@@ -1,7 +1,7 @@
 {
   "npmScope": "nx-mf-demo",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "angular.json": "*",
@@ -28,17 +28,11 @@
     }
   },
   "projects": {
-    "shell": {
-      "tags": []
-    },
     "shell-e2e": {
       "tags": [],
       "implicitDependencies": [
         "shell"
       ]
-    },
-    "mfe1": {
-      "tags": []
     },
     "mfe1-e2e": {
       "tags": [],
@@ -46,14 +40,30 @@
         "mfe1"
       ]
     },
-    "mfe1-mfe1-feature-book": {
-      "tags": []
+    "shell": {
+      "tags": [
+        "scope:shell"
+      ]
     },
-    "mfe1-mfe1-feature-search": {
-      "tags": []
+    "mfe1": {
+      "tags": [
+        "scope:mfe1"
+      ]
     },
     "shared-auth-lib": {
-      "tags": []
+      "tags": [
+        "scope:shared"
+      ]
+    },
+    "mfe1-feature-search": {
+      "tags": [
+        "scope:mfe1"
+      ]
+    },
+    "mfe1-feature-book": {
+      "tags": [
+        "scope:mfe1"
+      ]
     }
   }
 }

@@ -12,7 +12,9 @@
             "enforceBuildableLibDependency": true,
             "allow": [],
             "depConstraints": [
-              { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
+              { "sourceTag": "scope:shell", "onlyDependOnLibsWithTags": ["scope:shell", "scope:shared"] },
+              { "sourceTag": "scope:mfe1", "onlyDependOnLibsWithTags": ["scope:mfe1", "scope:shared"] },
+              { "sourceTag": "scope:shared", "onlyDependOnLibsWithTags": ["scope:shared"] }
             ]
           }
         ]

@@ -18,14 +18,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-mf-demo/mfe1/mfe1-feature-book": [
-        "libs/mfe1/mfe1-feature-book/src/index.ts"
-      ],
-      "@nx-mf-demo/mfe1/mfe1-feature-search": [
-        "libs/mfe1/mfe1-feature-search/src/index.ts"
-      ],
       "@nx-mf-demo/shared/auth-lib": [
         "libs/shared/auth-lib/src/index.ts"
+      ],
+      "@nx-mf-demo/mfe1/feature-search": [
+        "libs/mfe1/feature-search/src/index.ts"
+      ],
+      "@nx-mf-demo/mfe1/feature-book": [
+        "libs/mfe1/feature-book/src/index.ts"
       ]
     }
   },

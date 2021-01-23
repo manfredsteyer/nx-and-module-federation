@@ -253,60 +253,6 @@
         }
       }
     },
-    "mfe1-mfe1-feature-book": {
-      "projectType": "library",
-      "root": "libs/mfe1/mfe1-feature-book",
-      "sourceRoot": "libs/mfe1/mfe1-feature-book/src",
-      "prefix": "nx-mf-demo",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/mfe1/mfe1-feature-book/src/**/*.ts",
-              "libs/mfe1/mfe1-feature-book/src/**/*.html"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/mfe1/mfe1-feature-book"
-          ],
-          "options": {
-            "jestConfig": "libs/mfe1/mfe1-feature-book/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "mfe1-mfe1-feature-search": {
-      "projectType": "library",
-      "root": "libs/mfe1/mfe1-feature-search",
-      "sourceRoot": "libs/mfe1/mfe1-feature-search/src",
-      "prefix": "nx-mf-demo",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/mfe1/mfe1-feature-search/src/**/*.ts",
-              "libs/mfe1/mfe1-feature-search/src/**/*.html"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/mfe1/mfe1-feature-search"
-          ],
-          "options": {
-            "jestConfig": "libs/mfe1/mfe1-feature-search/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "shared-auth-lib": {
       "projectType": "library",
       "root": "libs/shared/auth-lib",
@@ -329,6 +275,60 @@
           ],
           "options": {
             "jestConfig": "libs/shared/auth-lib/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "mfe1-feature-search": {
+      "projectType": "library",
+      "root": "libs/mfe1/feature-search",
+      "sourceRoot": "libs/mfe1/feature-search/src",
+      "prefix": "nx-mf-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/mfe1/feature-search/src/**/*.ts",
+              "libs/mfe1/feature-search/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/mfe1/feature-search"
+          ],
+          "options": {
+            "jestConfig": "libs/mfe1/feature-search/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "mfe1-feature-book": {
+      "projectType": "library",
+      "root": "libs/mfe1/feature-book",
+      "sourceRoot": "libs/mfe1/feature-book/src",
+      "prefix": "nx-mf-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/mfe1/feature-book/src/**/*.ts",
+              "libs/mfe1/feature-book/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/mfe1/feature-book"
+          ],
+          "options": {
+            "jestConfig": "libs/mfe1/feature-book/jest.config.js",
             "passWithNoTests": true
           }
         }

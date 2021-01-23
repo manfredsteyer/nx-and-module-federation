@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'mfe1-mfe1-feature-search',
+  displayName: 'mfe1-feature-search',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../coverage/libs/mfe1/mfe1-feature-search',
+  coverageDirectory: '../../../coverage/libs/mfe1/feature-search',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

@@ -5,8 +5,8 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FlightsModule } from './flights/flights.module';
 import { APP_ROUTES } from './app.routes';
-import { Mfe1FeatureSearchModule } from '@nx-mf-demo/mfe1/mfe1-feature-search';
-import { Mfe1FeatureBookModule } from '@nx-mf-demo/mfe1/mfe1-feature-book';
+import { Mfe1FeatureSearchModule } from '@nx-mf-demo/mfe1/feature-search';
+import { Mfe1FeatureBookModule } from '@nx-mf-demo/mfe1/feature-book';
 import { AuthLibModule } from '@nx-mf-demo/shared/auth-lib';
 
 @NgModule({
