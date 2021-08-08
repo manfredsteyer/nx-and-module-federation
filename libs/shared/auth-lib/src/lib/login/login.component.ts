@@ -6,7 +6,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.component.html',
   // styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   userName: string;
   password: string;
@@ -16,9 +16,6 @@ export class LoginComponent implements OnInit {
   }
 
   constructor(private authService: AuthService) { }
-
-  ngOnInit(): void {
-  }
 
   login(): void {
     this.authService.login(this.userName, this.password);

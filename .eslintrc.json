@@ -12,17 +12,17 @@
             "enforceBuildableLibDependency": true,
             "allow": [],
             "depConstraints": [
-              { 
-                "sourceTag": "scope:shell", 
-                "onlyDependOnLibsWithTags": ["scope:shell", "scope:shared"] 
+              {
+                "sourceTag": "scope:shell",
+                "onlyDependOnLibsWithTags": ["scope:shell", "scope:shared"]
               },
-              { 
-                "sourceTag": "scope:mfe1", 
-                "onlyDependOnLibsWithTags": ["scope:mfe1", "scope:shared"] 
+              {
+                "sourceTag": "scope:mfe1",
+                "onlyDependOnLibsWithTags": ["scope:mfe1", "scope:shared"]
               },
-              { 
-                "sourceTag": "scope:shared", 
-                "onlyDependOnLibsWithTags": ["scope:shared"] 
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
               }
             ]
           }
@@ -32,7 +32,9 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nrwl/nx/typescript"],
-      "parserOptions": { "project": "./tsconfig.*?.json" },
+      "parserOptions": {
+        "project": "./tsconfig.*?.json"
+      },
       "rules": {}
     },
     {
